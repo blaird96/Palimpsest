@@ -94,9 +94,9 @@ def load_source(
     return normalize_text(text), metadata
 
 def get_collection() -> chromadb.Collection:
-    PATH.DATABASE_PATH.mkdir(parents=True, exists_ok=True)
+    PATH.DATABASE_PATH.mkdir(parents=True, exist_ok=True)
 
-    client = chromadb.Client(
+    client = chromadb.PersistentClient(
         path=str(PATH.DATABASE_PATH)
     )
 
