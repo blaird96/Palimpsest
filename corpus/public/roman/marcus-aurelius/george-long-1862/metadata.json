@@ -1,0 +1,15 @@
+{
+    "work_id": "marcus-aurelius-meditations",
+    "edition_id": "george-long-1862",
+    "title": "Meditations",
+    "original_language": "Latin",
+    "language": "English",
+    "translator": "George Long",
+    "translation_year": 1862,
+    "tradition": "Stoicism",
+    "period": "Roman Empire",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "book-and-section",
+    "license": "Public Domain"
+}
