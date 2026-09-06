@@ -1,0 +1,17 @@
+{
+    "id": "josephus-antiquities-william-whiston",
+    "work_id": "josephus-antiquities",
+    "edition_id": "william-whiston",
+    "title": "Antiquities of the Jews",
+    "author": "Flavius Josephus",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "William Whiston",
+    "translation_year": 1737,
+    "tradition": "Judaism",
+    "period": "Roman Empire",
+    "genre": "History",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

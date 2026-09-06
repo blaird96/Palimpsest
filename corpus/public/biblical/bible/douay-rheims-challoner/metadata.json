@@ -1,0 +1,17 @@
+{
+    "id": "bible-douay-rheims-challoner",
+    "work_id": "bible",
+    "edition_id": "douay-rheims-challoner",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "author": "Anonymous",
+    "original_language": "Hebrew, Aramaic, Greek, Latin",
+    "language": "English",
+    "translator": "Douay-Rheims; Richard Challoner",
+    "translation_year": 1752,
+    "tradition": "Biblical",
+    "period": "Ancient Near East / Greco-Roman",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "book-chapter-verse",
+    "license": "Public Domain"
+}

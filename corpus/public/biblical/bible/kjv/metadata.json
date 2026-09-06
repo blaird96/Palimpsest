@@ -1,0 +1,17 @@
+{
+    "id": "bible-kjv",
+    "work_id": "bible",
+    "edition_id": "kjv",
+    "title": "The King James Version of the Bible",
+    "author": "Anonymous",
+    "original_language": "Hebrew, Aramaic, Greek",
+    "language": "English",
+    "translator": "Authorized Version translators",
+    "translation_year": 1611,
+    "tradition": "Biblical",
+    "period": "Ancient Near East / Greco-Roman",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "book-chapter-verse",
+    "license": "Public Domain"
+}

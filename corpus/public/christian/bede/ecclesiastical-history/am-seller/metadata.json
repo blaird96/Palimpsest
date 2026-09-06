@@ -1,0 +1,17 @@
+{
+    "id": "bede-ecclesiastical-history-am-seller",
+    "work_id": "bede-ecclesiastical-history",
+    "edition_id": "am-seller",
+    "title": "Ecclesiastical History of England",
+    "author": "Bede",
+    "original_language": "Latin",
+    "language": "English",
+    "translator": "A. M. Sellar",
+    "translation_year": 1907,
+    "tradition": "Christianity",
+    "period": "Early Medieval",
+    "genre": "History",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

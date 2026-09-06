@@ -1,0 +1,17 @@
+{
+    "id": "augustine-confessions-eb-pusey",
+    "work_id": "augustine-confessions",
+    "edition_id": "eb-pusey",
+    "title": "Confessions",
+    "author": "Augustine of Hippo",
+    "original_language": "Latin",
+    "language": "English",
+    "translator": "E. B. Pusey",
+    "translation_year": 1838,
+    "tradition": "Christianity",
+    "period": "Late Antiquity",
+    "genre": "Theology",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

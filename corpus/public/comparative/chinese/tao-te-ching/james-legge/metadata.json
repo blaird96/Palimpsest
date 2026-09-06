@@ -1,0 +1,17 @@
+{
+    "id": "tao-te-ching-james-legge",
+    "work_id": "tao-te-ching",
+    "edition_id": "james-legge",
+    "title": "Tao Te Ching",
+    "author": "Laozi",
+    "original_language": "Chinese",
+    "language": "English",
+    "translator": "James Legge",
+    "translation_year": 1891,
+    "tradition": "Taoism",
+    "period": "Ancient China",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "chapter",
+    "license": "Public Domain"
+}

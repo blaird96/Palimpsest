@@ -1,0 +1,17 @@
+{
+    "id": "seneca-minor-dialogues-aubrey-stewart",
+    "work_id": "seneca-minor-dialogues",
+    "edition_id": "aubrey-stewart",
+    "title": "Minor Dialogues, Together With the Dialogue on Clemency",
+    "author": "Lucius Annaeus Seneca",
+    "original_language": "Latin",
+    "language": "English",
+    "translator": "Aubrey Stewart",
+    "translation_year": 1889,
+    "tradition": "Stoicism",
+    "period": "Roman Empire",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "dialogue-and-section",
+    "license": "Public Domain"
+}

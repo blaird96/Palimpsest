@@ -7,6 +7,13 @@ from typing import Any
 
 import chromadb
 import ollama
+from chromadb.api.types import Metadata, PyEmbedding
+
+from .processing.config import ChunkConfig, EmbeddingConfig
+
+class CONFIG:
+    chunk_config = ChunkConfig()
+    embedding_config = EmbeddingConfig()
 
 class PATH:
     PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -17,11 +24,6 @@ class OLLAMA:
     COLLECTION_NAME = "palimpsest_passages"
     EMBEDDING_MODEL = "embeddinggemma"
 
-class PROCESSING:
-    CHUNK_SIZE = 1_200
-    CHUNK_OVERLAP = 200
-    BATCH_SIZE = 32
-
 def normalize_text(text: str) -> str:
     paragraphs = [
         " ".join(line.split()) for line in text.splitlines() if line.strip()
@@ -31,9 +33,12 @@ def normalize_text(text: str) -> str:
 
 def chunk_text(
         text: str,
-        chunk_size: int = PROCESSING.CHUNK_SIZE,
-        overlap: int = PROCESSING.CHUNK_OVERLAP
+        config: ChunkConfig
 ) -> list[str]:
+
+    chunk_size = config.size
+    overlap = config.overlap
+
     if chunk_size <= 0:
         raise ValueError("chunk_size must be greater than 0")
 
@@ -67,9 +72,7 @@ def create_chunk_id(
     return f"{source_id}:{chunk_number}:{digest}"
 
 
-def load_source(
-        source_directory: Path
-) -> tuple[str, dict[str, Any]]:
+def load_source(source_directory: Path) -> tuple[str, dict[str, Any]]:
     text_path = source_directory / "source.txt"
     metadata_path = source_directory / "metadata.json"
 
@@ -106,38 +109,38 @@ def get_collection() -> chromadb.Collection:
     )
 
 
-def embed_batch(texts: list[str]) -> list[list[float]]:
+def embed_batch(texts: list[str]) -> list[PyEmbedding]:
     response = ollama.embed(
         model=OLLAMA.EMBEDDING_MODEL,
         input=texts,
     )
 
-    return response.embeddings
+    embeddings: list[PyEmbedding] = [list(vector) for vector in response.embeddings]
+    return embeddings
 
-def ingest_source(
-        collection: chromadb.Collection,
-        source_directory: Path
-) -> int:
+def ingest_source(collection: chromadb.Collection,source_directory: Path, chunk_config: ChunkConfig, embedding_config: EmbeddingConfig) -> int:
     text, source_metadata = load_source(source_directory)
-    chunks = chunk_text(text)
+    chunks = chunk_text(text, chunk_config)
 
     source_id = str(source_metadata["id"])
 
+    relative_path = source_directory.relative_to(PATH.CORPUS_ROOT)
+    
     print(
-        f"Ingesting {source_metadata['title']}"
-        f"as {len(chunks)} chunks..."
+        f"Ingesting {source_metadata['title']} "
+        f"[{relative_path}] as {len(chunks)} chunks..."
     )
 
     inserted = 0
 
 
-    for batch_start in range(0, len(chunks), PROCESSING.BATCH_SIZE):
-        batch = chunks[batch_start:batch_start + PROCESSING.BATCH_SIZE]
+    for batch_start in range(0, len(chunks), embedding_config.batch_size):
+        batch = chunks[batch_start:batch_start + embedding_config.batch_size]
 
         embeddings = embed_batch(batch)
 
         ids: list[str] = []
-        metadatas: list [dict[str, Any]] = []
+        metadatas: list[Metadata] = []
 
         for offset, chunk in enumerate(batch):
             chunk_number = batch_start + offset
@@ -152,7 +155,7 @@ def ingest_source(
                 {
                     **source_metadata,
                     "chunk_number": chunk_number,
-                    "source_path": str(source_directory.relative_to(PATH.CORPUS_ROOT))
+                    "source_path": str(source_directory.relative_to(PATH.CORPUS_ROOT)),
                 }
             )
 
@@ -167,12 +170,26 @@ def ingest_source(
 
     return inserted
 
+def discover_sources(corpus_root: Path) -> list[Path]:
+    source_directories: list[Path] = []
+
+    for metadata_path in corpus_root.rglob("metadata.json"):
+        source_directory = metadata_path.parent
+        source_path = source_directory / "source.txt"
+        
+        if not source_path.exists():
+            raise FileNotFoundError(f"Found metadata without source.txt:\n\t{source_path}")
+
+        source_directories.append(source_directory)
+
+    return sorted(source_directories)
+
 def main() -> None: 
     collection = get_collection()
+    chunk_config = ChunkConfig()
+    embedding_config = EmbeddingConfig()
 
-    source_directories = sorted(
-        path for path in PATH.CORPUS_ROOT.iterdir() if path.is_dir()
-    )
+    source_directories = discover_sources(PATH.CORPUS_ROOT)
 
     if not source_directories:
         raise RuntimeError(f"No sources found in {PATH.CORPUS_ROOT}")
@@ -180,7 +197,7 @@ def main() -> None:
     total = 0
 
     for source_directory in source_directories:
-        total += ingest_source(collection=collection, source_directory=source_directory)
+        total += ingest_source(collection=collection, source_directory=source_directory, chunk_config=chunk_config, embedding_config=embedding_config)
 
     print(f"Ingestion complete: {total} passages indexed.")
 

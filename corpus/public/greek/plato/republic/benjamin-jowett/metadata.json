@@ -1,0 +1,17 @@
+{
+    "id": "plato-republic-benjamin-jowett",
+    "work_id": "plato-republic",
+    "edition_id": "benjamin-jowett",
+    "title": "The Republic",
+    "author": "Plato",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Benjamin Jowett",
+    "translation_year": 1871,
+    "tradition": "Hellenic",
+    "period": "Classical Greece",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "book-and-stephanus",
+    "license": "Public Domain"
+}

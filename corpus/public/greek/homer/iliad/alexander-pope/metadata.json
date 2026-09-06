@@ -1,0 +1,17 @@
+{
+    "id": "homer-iliad-alexander-pope",
+    "work_id": "homer-iliad",
+    "edition_id": "alexander-pope",
+    "title": "The Iliad",
+    "author": "Homer",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Alexander Pope",
+    "translation_year": 1715,
+    "tradition": "Hellenic",
+    "period": "Archaic Greece",
+    "genre": "Epic poetry",
+    "source_type": "primary",
+    "citation_scheme": "book-and-line",
+    "license": "Public Domain"
+}

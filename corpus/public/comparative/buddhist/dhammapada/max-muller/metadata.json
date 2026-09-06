@@ -1,0 +1,17 @@
+{
+    "id": "dhammapada-max-muller",
+    "work_id": "dhammapada",
+    "edition_id": "max-muller",
+    "title": "The Dhammapada",
+    "author": "Anonymous",
+    "original_language": "Pali",
+    "language": "English",
+    "translator": "F. Max Müller",
+    "translation_year": 1881,
+    "tradition": "Buddhism",
+    "period": "Ancient India",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "chapter-and-verse",
+    "license": "Public Domain"
+}

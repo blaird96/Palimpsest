@@ -1,0 +1,17 @@
+{
+    "id": "analects-james-legge",
+    "work_id": "analects",
+    "edition_id": "james-legge",
+    "title": "The Analects of Confucius",
+    "author": "Confucius",
+    "original_language": "Chinese",
+    "language": "English",
+    "translator": "James Legge",
+    "translation_year": 1861,
+    "tradition": "Confucianism",
+    "period": "Ancient China",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

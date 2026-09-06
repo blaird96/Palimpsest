@@ -1,0 +1,17 @@
+{
+    "id": "epictetus-enchiridion-thomas-higginson",
+    "work_id": "epictetus-enchiridion",
+    "edition_id": "thomas-higginson",
+    "title": "The Enchiridion",
+    "author": "Epictetus",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Thomas Wentworth Higginson",
+    "translation_year": 1865,
+    "tradition": "Stoicism",
+    "period": "Roman Empire",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "numbered-sections",
+    "license": "Public Domain"
+}

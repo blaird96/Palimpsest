@@ -1,0 +1,17 @@
+{
+    "id": "plato-symposium-benjamin-jowett",
+    "work_id": "plato-symposium",
+    "edition_id": "benjamin-jowett",
+    "title": "Symposium",
+    "author": "Plato",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Benjamin Jowett",
+    "translation_year": 1871,
+    "tradition": "Hellenic",
+    "period": "Classical Greece",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "stephanus",
+    "license": "Public Domain"
+}

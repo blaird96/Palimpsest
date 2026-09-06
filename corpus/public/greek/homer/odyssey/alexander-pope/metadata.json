@@ -1,0 +1,17 @@
+{
+    "id": "homer-odyssey-alexander-pope",
+    "work_id": "homer-odyssey",
+    "edition_id": "alexander-pope",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Alexander Pope",
+    "translation_year": 1726,
+    "tradition": "Hellenic",
+    "period": "Archaic Greece",
+    "genre": "Epic poetry",
+    "source_type": "primary",
+    "citation_scheme": "book-and-line",
+    "license": "Public Domain"
+}

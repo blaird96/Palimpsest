@@ -1,0 +1,17 @@
+{
+    "id": "homer-odyssey-samuel-butler",
+    "work_id": "homer-odyssey",
+    "edition_id": "samuel-butler",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "Samuel Butler",
+    "translation_year": 1900,
+    "tradition": "Hellenic",
+    "period": "Archaic Greece",
+    "genre": "Epic poetry",
+    "source_type": "primary",
+    "citation_scheme": "book-and-line",
+    "license": "Public Domain"
+}

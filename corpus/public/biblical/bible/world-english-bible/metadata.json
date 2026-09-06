@@ -1,0 +1,17 @@
+{
+    "id": "bible-world-english-bible",
+    "work_id": "bible",
+    "edition_id": "world-english-bible",
+    "title": "The World English Bible (WEB), Complete",
+    "author": "Anonymous",
+    "original_language": "Hebrew, Aramaic, Greek",
+    "language": "English",
+    "translator": "World English Bible",
+    "translation_year": 2000,
+    "tradition": "Biblical",
+    "period": "Ancient Near East / Greco-Roman",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "book-chapter-verse",
+    "license": "Public Domain"
+}

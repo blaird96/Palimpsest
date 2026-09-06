@@ -1,7 +1,10 @@
 {
+    "id": "marcus-aurelius-meditations-meric-casaubon-1634",
     "work_id": "marcus-aurelius-meditations",
     "edition_id": "meric-casaubon-1634",
-    "original_language": "Latin",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "original_language": "Greek",
     "language": "English",
     "translator": "Meric Casaubon",
     "translation_year": 1634,

@@ -1,0 +1,17 @@
+{
+    "id": "1-enoch-rh-charles",
+    "work_id": "1-enoch",
+    "edition_id": "rh-charles",
+    "title": "The Book of Enoch",
+    "author": "Anonymous",
+    "original_language": "Ge'ez",
+    "language": "English",
+    "translator": "R. H. Charles",
+    "translation_year": 1917,
+    "tradition": "Judaism",
+    "period": "Second Temple",
+    "genre": "Apocalyptic",
+    "source_type": "primary",
+    "citation_scheme": "chapter-and-verse",
+    "license": "Public Domain"
+}

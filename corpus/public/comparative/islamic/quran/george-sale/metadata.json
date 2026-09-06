@@ -1,0 +1,17 @@
+{
+    "id": "quran-george-sale",
+    "work_id": "quran",
+    "edition_id": "george-sale",
+    "title": "The Koran (Al-Qur'an)",
+    "author": "Anonymous",
+    "original_language": "Arabic",
+    "language": "English",
+    "translator": "George Sale",
+    "translation_year": 1734,
+    "tradition": "Islam",
+    "period": "Early Islamic",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "surah-and-ayah",
+    "license": "Public Domain"
+}

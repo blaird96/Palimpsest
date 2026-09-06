@@ -1,0 +1,17 @@
+{
+    "id": "boethius-consolation-hr-james",
+    "work_id": "boethius-consolation-of-philosophy",
+    "edition_id": "hr-james",
+    "title": "The Consolation of Philosophy",
+    "author": "Boethius",
+    "original_language": "Latin",
+    "language": "English",
+    "translator": "H. R. James",
+    "translation_year": 1897,
+    "tradition": "Christianity",
+    "period": "Late Antiquity",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "book-and-prose-meter",
+    "license": "Public Domain"
+}

@@ -17,7 +17,7 @@ class OLLAMA:
 def search_passages(
         query: str,
         result_count: int = 5
-) -> list[dict[str. Any]]:
+) -> list[dict[str, Any]]:
     if not query.strip():
         raise ValueError("Query must not be empty")
 
@@ -36,9 +36,16 @@ def search_passages(
         ]
     )
 
-    documents = results["documents"][0]
-    metadatas = results["metadatas"][0]
-    distances = results["distances"][0]
+    document_rows = results["documents"]
+    metadata_rows = results["metadatas"]
+    distance_rows = results["distances"]
+
+    if document_rows is None or metadata_rows is None or distance_rows is None:
+        raise RuntimeError("Chroma query did not return documents, metadatas, and distances")
+
+    documents = document_rows[0]
+    metadatas = metadata_rows[0]
+    distances = distance_rows[0]
 
     passages: list[dict[str, Any]] = []
 

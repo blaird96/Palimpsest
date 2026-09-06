@@ -1,0 +1,15 @@
+{
+    "id": "augustine-confessions-latin",
+    "work_id": "augustine-confessions",
+    "edition_id": "latin",
+    "title": "Confessiones",
+    "author": "Augustine of Hippo",
+    "original_language": "Latin",
+    "language": "Latin",
+    "tradition": "Christianity",
+    "period": "Late Antiquity",
+    "genre": "Theology",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

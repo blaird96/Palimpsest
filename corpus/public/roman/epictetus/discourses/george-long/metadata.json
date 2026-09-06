@@ -1,0 +1,17 @@
+{
+    "id": "epictetus-discourses-george-long",
+    "work_id": "epictetus-discourses",
+    "edition_id": "george-long",
+    "title": "Discourses",
+    "author": "Epictetus",
+    "original_language": "Greek",
+    "language": "English",
+    "translator": "George Long",
+    "translation_year": 1877,
+    "tradition": "Stoicism",
+    "period": "Roman Empire",
+    "genre": "Philosophy",
+    "source_type": "primary",
+    "citation_scheme": "book-and-chapter",
+    "license": "Public Domain"
+}

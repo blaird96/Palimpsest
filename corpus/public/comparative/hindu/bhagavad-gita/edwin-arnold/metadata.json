@@ -1,0 +1,17 @@
+{
+    "id": "bhagavad-gita-edwin-arnold",
+    "work_id": "bhagavad-gita",
+    "edition_id": "edwin-arnold",
+    "title": "The Bhagavad Gita",
+    "author": "Vyasa",
+    "original_language": "Sanskrit",
+    "language": "English",
+    "translator": "Edwin Arnold",
+    "translation_year": 1885,
+    "tradition": "Hinduism",
+    "period": "Ancient India",
+    "genre": "Scripture",
+    "source_type": "primary",
+    "citation_scheme": "chapter-and-verse",
+    "license": "Public Domain"
+}
